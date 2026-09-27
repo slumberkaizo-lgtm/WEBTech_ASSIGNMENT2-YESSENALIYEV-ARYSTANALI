@@ -1,0 +1,91 @@
+body{
+    background-color: #f4dfd6;
+    color: #171313;
+    font-family: "Luckiest Guy", cursive;
+}
+.container{
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    grid-template-rows: 184px 1fr 100px;
+    grid-template-areas: 
+    "Logo Links"
+    "sidebar Gallery"
+    "footer footer";
+}
+.Logo{
+    grid-area: Logo;
+    background-color: #b9323d;
+    border-bottom: 4px solid #7d2028;
+}
+.Logo img{
+    width:420px;
+    height: 140px;
+    margin: 20px 0 0 0;
+}
+.Links{
+    grid-area: Links;
+    display: grid;
+    grid-template-columns: repeat(3, 235px);
+    background-color: #b9323d;
+    align-items: center;
+    justify-content:end;
+    border-bottom: 4px solid #7d2028;
+    padding: 0 58px 0 0;
+}
+.link{
+    width: 180px;
+    height: 70px;
+    color: #fff2e6;
+    background-color: #171313;
+    text-align: center;
+    font-size: 36px;
+    line-height: 70px;
+    transition: 0.15s;
+    text-decoration: none;
+    border: 3px solid #e8a89e;
+}
+.link:hover {
+  background-color: #d9a44b;
+  color: #171313;
+  transform: translateY(-3px);
+}
+.sidebar{
+    grid-area: sidebar;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    background-color: #d9a44b;
+    color: #171313;
+}
+.Gallery{
+    grid-area: Gallery;
+    background-color: #f4dfd6;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas: 
+    "pic pic pic"
+    "pic pic pic"
+    "pic pic pic";
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.Gallery img{
+    border: 4px solid #7d2028;
+    background-color: #e8a89e;
+    width: 290px;
+    height: 290px;
+    transition: 0.15s;
+}
+.Gallery img:hover{
+    border-color: #17633b;
+    width: 310px;
+    height: 310px;
+}
+.footer{
+    grid-area: footer;
+    background-color: #17633b;
+    color: #fff2e6;
+    text-align: center;
+}

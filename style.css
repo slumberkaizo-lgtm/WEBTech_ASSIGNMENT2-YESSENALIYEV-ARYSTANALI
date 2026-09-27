@@ -8,9 +8,10 @@ body{
     align-items: center;
     background-color: #35413d;
     border-bottom: 4px solid #1f2725;
+    height: 180px;
 }
 .header img{
-    width: 140px;
+    width: 420px;
     height: 140px;
 }
 
