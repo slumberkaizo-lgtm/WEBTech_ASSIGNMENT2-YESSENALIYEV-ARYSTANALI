@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    background-color: #d8d3c9;
+    color: #202522;
+    font-family: "Pixelify Sans", sans-serif;
+}
 .header{
     display: flex;
     justify-content: space-between;
@@ -34,4 +40,100 @@
   background-color: #b46f3c;
   color: #1f2725;
   transform: translateY(-3px);
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "Main Info";
+}
+.Main{
+    display: grid;
+    grid-template-columns: 700px;
+    grid-template-rows: 280px 280px 280px;
+    grid-area: Main;
+    background-color: #c5c0b7;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 40px 0;
+}
+.Info {
+    grid-area: Info;
+    background-color: #67736d;
+    color: #f1f1e8;
+    padding: 40px;
+    border-left: 5px solid #35413d;
+}
+.Info h1 {
+    font-size: 46px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #d59b62;
+}
+.Info h2 {
+    color: #f1f1e8;
+    border-bottom: 3px solid #b46f3c;
+    padding-bottom: 8px;
+    margin-top: 35px;
+}
+.Info p {
+    font-size: 22px;
+    line-height: 1.5;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2725;
+    color: #f1f1e8;
+    height: 80px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 20px;
+    border-top: 4px solid #b46f3c;
+}
+.card {
+    width: 700px;
+    height: 260px;
+    background-color: #eee9df;
+    color: #202522;
+    border: 4px solid #67736d;
+    border-left: 10px solid #b46f3c;
+    padding: 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s;
+}
+.card:hover {
+    transform: translateX(8px);
+    border-color: #35413d;
+    border-left-color: #d59b62;
+}
+.card h2 {
+    margin: 0 0 15px 0;
+    font-size: 34px;
+    color: #35413d;
+}
+.card p {
+    font-size: 22px;
+    line-height: 1.4;
+    margin: 0;
+    max-width: 550px;
+}
+.card a {
+    margin-top: auto;
+    align-self: flex-end;
+    background-color: #b46f3c;
+    color: #1f2725;
+    padding: 10px 25px;
+    border: 3px solid #1f2725;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.15s;
+}
+.card a:hover {
+    background-color: #d59b62;
+    transform: translateY(-3px);
 }
